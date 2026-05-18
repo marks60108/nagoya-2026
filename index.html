@@ -154,10 +154,10 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#f0f4f
 .drive-tip-item strong{color:#166534;display:block;margin-bottom:3px}
 
 footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;padding:28px;margin-top:60px;font-size:.82rem}
-.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.22;z-index:0}
-.day-img-wrap{margin:-18px -20px 14px;height:148px;overflow:hidden;border-radius:10px 10px 0 0}
-.day-img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
-.day-body:hover .day-img{transform:scale(1.04)}
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center 40%;opacity:.28;z-index:0}
+.day-img-wrap{margin:-18px -20px 14px;height:190px;overflow:hidden;border-radius:10px 10px 0 0}
+.day-img{width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block;transition:transform .5s ease}
+.day-body:hover .day-img{transform:scale(1.06)}
 
 @media(max-width:768px){
   .hero h1{font-size:1.8rem}
@@ -172,7 +172,7 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
 <body>
 
 <header class="hero">
-  <div class="hero-bg" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Glico_Man_sign%2C_Dotonbori.JPG/1280px-Glico_Man_sign%2C_Dotonbori.JPG')"></div>
+  <div class="hero-bg" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/e/e9/Dotonbori_canal_Osaka.jpg')"></div>
   <div class="hero-content">
     <span class="hero-emoji">🏯</span>
     <h1>大阪・京都・伊勢</h1>
@@ -293,13 +293,15 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
       </div>
       <div class="day-loc">📍 KIX → 難波 → 心齋橋</div>
       <ul class="acts">
-        <li><span class="act-time">落地後</span>南海ラピート α → 難波（38分 ¥1,830）・購買 ICOCA 備用</li>
-        <li><span class="act-time">下午</span>酒店 check-in，心齋橋筋商店街 + アメリカ村（美國村）逛街</li>
-        <li><span class="act-time">17:30</span>道頓堀夜景：固力果跑跑人・蟹道楽・章魚燒一條街</li>
-        <li><span class="act-time">晚上</span>戎橋筋商店街，附近 Don Quijote 24小時購物</li>
+        <li><span class="act-time">落地後</span>南海ラピート α → 難波（38分 ¥1,830）；α版有指定座位且設計超酷，β版¥1,250無座位。到難波站立即在 2F 購買 ICOCA（¥2,000含¥500押金），全程大阪・京都・奈良通用</li>
+        <li><span class="act-time">check-in</span>酒店辦理入住後，行李放好輕裝出門。心齋橋筋商店街（1km長拱廊）：大丸・ZARA・藥妝店一字排開</li>
+        <li><span class="act-time">15:30</span>アメリカ村（美國村）：舊貨服飾・街頭藝術・三角公園自拍。往南接近なんばパークス可俯瞰整個商業街</li>
+        <li><span class="act-time">17:30</span>道頓堀夜景正式點亮：固力果跑跑人打卡（戎橋旁）→ 蟹道楽巨蟹爪 → 一條街章魚燒試吃（たこ焼き道楽わなか）</li>
+        <li><span class="act-time">19:00</span>戎橋筋商店街晚間採購，附近 Don Quijote 24小時，藥妝・零食・電器都有</li>
+        <li><span class="act-time">21:00</span>道頓堀運河夜遊（遊覧船 ¥900，約20分），從水面看兩岸霓虹燈最震撼</li>
       </ul>
-      <div class="meal-row"><span class="meal-tag">🍜 晚餐：金龍拉麵 道頓堀（24小時・龍型外牆地標）</span></div>
-      <div class="tip-box">💡 到難波先買好 ICOCA（¥2,000含¥500押金），之後大阪・京都・奈良全程都能刷</div>
+      <div class="meal-row"><span class="meal-tag">🍜 晚餐：金龍拉麵 道頓堀（24小時・龍型外牆地標，醬油豚骨¥850）</span></div>
+      <div class="tip-box">💡 南海ラピートα 座位建議選 D席（右側窗），可看到大阪灣海景。ICOCA 在地鐵站自動售票機即可購買，操作有中文介面</div>
     </div>
   </div>
 
@@ -310,19 +312,20 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">🏯 大阪城 + 黒門市場 + 新世界</div>
         <div class="day-date-tag">12/19 (六) 周遊卡第1天</div>
       </div>
-      <div class="day-loc">📍 大阪市内</div>
+      <div class="day-loc">📍 大阪市内（地鐵谷町線・堺筋線）</div>
       <ul class="acts">
-        <li><span class="act-time">09:00</span>大阪城天守閣（¥600）・西の丸庭園・城跡公園散步</li>
-        <li><span class="act-time">11:30</span>黒門市場 lunch：海膽・松阪牛串・明石章魚，邊走邊吃</li>
-        <li><span class="act-time">13:30</span>新世界・通天閣（展望台¥1,000）・昭和復古街道氛圍</li>
-        <li><span class="act-time">15:30</span>四天王寺（免費）・日本最古老官立寺院</li>
-        <li><span class="act-time">17:30</span>心齋橋 PARCO・大丸百貨採購</li>
+        <li><span class="act-time">09:00</span>大阪城天守閣（¥600）：8層樓展示館，最頂層360度俯瞰大阪市區。旁邊的「西の丸庭園」（¥200）冬日楓葉殘紅漂亮，城與庭一同值回票價</li>
+        <li><span class="act-time">10:30</span>大阪歴史博物館（¥600，與大阪城相鄰）：10F 有復原的難波宮大極殿模型，透過落地窗可同時眺望大阪城，CP 值超高</li>
+        <li><span class="act-time">11:30</span>黒門市場（日本橋駅 10分步行）：580m 長商店街，必吃：越後屋・大トロ牛串・海老天婦羅。12月限定有螃蟹特賣，一邊走一邊吃才是正確打開方式</li>
+        <li><span class="act-time">13:30</span>新世界・通天閣（展望台¥1,000，100m高）：大正時代復古街道，到處是河豚招牌。ジャンジャン横丁（斜入街）有將棋老人下棋，昭和感十足</li>
+        <li><span class="act-time">15:30</span>四天王寺（免費入場，伽藍¥300）：聖德太子 593 年創建，日本佛教最古老寺院之一。毎月 21・22 日有骨董市集，12/22 可以逛到！</li>
+        <li><span class="act-time">17:00</span>天王寺動物園旁的「てんしば」公園聖誕燈飾，再步行到阿倍野 Harukas 地下街採購</li>
       </ul>
       <div class="meal-row">
-        <span class="meal-tag">🐙 午餐：黒門市場 海鮮串（¥1,500-3,000）</span>
-        <span class="meal-tag">🍢 晚餐：串かつだるま 新世界本店（炸串始祖）</span>
+        <span class="meal-tag">🐙 午餐：黒門市場 邊走邊吃（¥1,500-3,000 預算搞定豐盛一餐）</span>
+        <span class="meal-tag">🍢 晚餐：串かつだるま 新世界本店（炸串始祖 1929 年創業，雙人點20串才够）</span>
       </div>
-      <div class="tip-box">💡 持大阪・關西周遊卡今日地鐵無限搭，另含通天閣套票折扣更划算</div>
+      <div class="tip-box">💡 今日使用大阪・關西周遊卡：地鐵無限搭 + 通天閣折扣票 + 大阪城折扣（合計省 ¥800+）。大阪城天守閣 9:00 開門，09:00 前到人最少</div>
     </div>
   </div>
 
@@ -355,20 +358,21 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">🦌 奈良日歸・東大寺・鹿苑・ならまち</div>
         <div class="day-date-tag">12/21 (一)</div>
       </div>
-      <div class="day-loc">📍 近鉄難波 → 近鉄奈良（急行約45分）</div>
+      <div class="day-loc">📍 近鉄難波 → 近鉄奈良（急行約45分・¥680）</div>
       <ul class="acts">
-        <li><span class="act-time">09:00</span>近鉄難波出發（急行¥680 / 特急¥1,210）</li>
-        <li><span class="act-time">10:00</span>奈良公園：買鹿煎餅（¥200）被鹿群包圍！</li>
-        <li><span class="act-time">10:30</span>東大寺大佛殿（¥600）・奈良大佛高15m</li>
-        <li><span class="act-time">12:00</span>春日大社（免費）・世界遺産神社・朱紅燈籠長廊</li>
-        <li><span class="act-time">13:30</span>ならまち 古町巷弄散步・格子窗老町屋咖啡</li>
-        <li><span class="act-time">16:00</span>返回大阪</li>
+        <li><span class="act-time">09:00</span>近鉄難波出發（急行¥680 省錢最划算；特急¥1,210 快10分但價差大），抵達近鉄奈良駅直接步行奈良公園（5分）</li>
+        <li><span class="act-time">10:00</span>奈良公園（免費）：買鹿煎餅（¥200，鹿是天然記念物，共約1,300頭自由漫步），春日大社参道兩側最多鹿聚集</li>
+        <li><span class="act-time">10:30</span>東大寺大佛殿（¥600，開放 7:30）：世界最大木造建築，奈良大佛（毘盧遮那仏）高 14.7m，重 500 噸。中柱有一個「大佛鼻孔大小」的洞，鑽過去據說智慧提升</li>
+        <li><span class="act-time">12:00</span>春日大社（免費，寶物館¥500）：1,300 年歷史，3,000 盞石燈籠與青銅燈籠圍繞参道。每年 2・8 月萬燈籠活動是最夢幻景象</li>
+        <li><span class="act-time">13:00</span>ならまち（奈良町）：保留江戸・明治時代町屋的迷宮小巷。「格子の家」（奈良町資料館・免費）可入內參觀傳統商家結構</li>
+        <li><span class="act-time">14:30</span>若時間充裕：興福寺五重塔（¥300）・猿沢池倒影。或在ならまち咖啡館（椿井餅 or 粟 nakatanidou）休息</li>
+        <li><span class="act-time">16:00</span>返回大阪（近鉄 or JR），行程比較鬆的話可延至 17:00</li>
       </ul>
       <div class="meal-row">
-        <span class="meal-tag">🍱 午餐：平宗 柿の葉寿司（柿葉壽司・奈良名物・本店堂食）</span>
-        <span class="meal-tag">🥘 晚餐：道頓堀今井（大阪うどん・昆布高湯・80年老店）</span>
+        <span class="meal-tag">🍱 午餐：平宗 本店 柿の葉寿司（創業1861年，鯖魚・鮭魚柿葉押壽司套餐¥1,870）</span>
+        <span class="meal-tag">🥘 晚餐：道頓堀今井（大阪うどん専門，昆布と鰹高湯清澈透明，80年老店）</span>
       </div>
-      <div class="tip-box">💡 ならまち小店多，留1小時以上。JR也可達奈良，依飯店位置選較近的路線</div>
+      <div class="tip-box">💡 ならまち「猿沢池」附近的 nakatanidou 草餅，師傅現打草餅的現場非常精彩（打餅表演每小時一次）。奈良公園鹿在傍晚（16:00後）會往山上移動，要拍鹿群全景趁下午</div>
     </div>
   </div>
 
@@ -379,19 +383,21 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">⚓ 神戶日歸・異人館・神戶牛・港口</div>
         <div class="day-date-tag">12/22 (二)</div>
       </div>
-      <div class="day-loc">📍 阪神なんば線 難波 → 神戸三宮（直通約43分・¥820）</div>
+      <div class="day-loc">📍 阪神なんば線 大阪難波 → 神戸三宮（直通43分・¥820，無需換車）</div>
       <ul class="acts">
-        <li><span class="act-time">09:30</span>北野異人館街：英国館・風見鶏の館（各¥500-650）・异文化建築群</li>
-        <li><span class="act-time">12:00</span>南京町（神戸中華街）：老祥記 豚まん 排隊必買</li>
-        <li><span class="act-time">14:00</span>ハーバーランド + Mosaic 港口購物廣場</li>
-        <li><span class="act-time">15:30</span>メリケンパーク・神戸ポートタワー（¥1,000・新裝開幕）</li>
-        <li><span class="act-time">17:30</span>阪神電車 神戸三宮 → 難波 返回大阪</li>
+        <li><span class="act-time">09:30</span>北野異人館街：英国館（¥750，1907年建）・風見鶏の館（¥650，ドイツ人商人建）・ラインの館（免費）。3館共通券¥1,500更划算。明治時代外國商人聚居區，坡道景色美</li>
+        <li><span class="act-time">11:00</span>北野坂下行到三宮中心，沿路有精品街與老咖啡館（にしむら珈琲・1948年創業，咖啡¥550）</li>
+        <li><span class="act-time">12:00</span>南京町（神戸中華街）：老祥記 豚まん（3個¥390，早晨10時開始排隊，週末等30分正常）、四興樓 蝦子麵、皇蘭 ちまき</li>
+        <li><span class="act-time">14:00</span>ハーバーランド + Mosaic：神戶港口最新商業設施，阪神淡路大震災紀念碑在此。UMIE 商場附近有神戶ガス燈通り（瓦斯燈街道）非常適合拍照</li>
+        <li><span class="act-time">15:30</span>メリケンパーク：神戸ポートタワー（¥1,000，新裝開幕，360度玻璃觀景台）。神戶港開港の碑・BE KOBE 文字板必拍</li>
+        <li><span class="act-time">17:00</span>夕陽時段的港口景色最美，可以在 Mosaic 露臺看夕照</li>
+        <li><span class="act-time">17:30</span>阪神三宮 → 大阪難波（直通43分），返回飯店換裝準備晚餐</li>
       </ul>
       <div class="meal-row">
-        <span class="meal-tag">🥟 午餐：老祥記豚まん + 南京町散食</span>
-        <span class="meal-tag">🥩 晚餐：モーリヤ本店 神戶牛鐵板燒（需預約・午餐套餐更划算）或福太郎お好み焼き</span>
+        <span class="meal-tag">🥟 午餐：老祥記豚まん（3個¥390）+ 南京町散食（炸物・蝦子麵）</span>
+        <span class="meal-tag">🥩 晚餐：モーリヤ本店 神戶牛鐵板燒（1930年創業，午餐¥5,500起・晚餐¥15,000起，均需訂位）</span>
       </div>
-      <div class="tip-box">💡 神戶牛建議訂午餐套餐（¥4,000-8,000），CP值遠高於晚餐。モーリヤ需電話預約</div>
+      <div class="tip-box">💡 神戶牛強烈建議訂午餐套餐（¥5,500-8,800），視覺與口感跟晚餐幾乎一樣，價格只有一半。モーリヤ可至官網填寫預約表單（中文介面），比電話方便</div>
     </div>
   </div>
 
@@ -404,19 +410,19 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
       </div>
       <div class="day-loc">📍 近鉄難波 → 伊勢市（特急約2小時）→ 鳥羽</div>
       <ul class="acts">
-        <li><span class="act-time">08:00</span>近鉄難波出發，搭ビスタカー特急（需劃位¥740加收）</li>
-        <li><span class="act-time">10:30</span>外宮（豊受大神宮）：伊勢市站步行5分，傳統先拜外宮</li>
-        <li><span class="act-time">12:00</span>搭巴士 外宮→内宮（15分・¥170，含在近鉄周遊券）</li>
-        <li><span class="act-time">12:30</span>内宮（皇大神宮）：宇治橋→五十鈴川→御正宮，内部禁止攝影</li>
-        <li><span class="act-time">14:00</span>おかげ横丁：赤福本店（現做麻糬必吃）・豚捨牛肉串・伊勢うどん</li>
-        <li><span class="act-time">16:30</span>近鉄伊勢市 → 鳥羽（25分・¥350）</li>
-        <li><span class="act-time">17:30</span>鳥羽旅館 check-in・換浴衣・露天溫泉</li>
+        <li><span class="act-time">08:00</span>近鉄難波出發，搭「ビスタカー」特急（¥3,060含特急料¥740）。二層車廂，建議訂二樓展望座位，沿途可看近畿山景。車上有販賣車，可買咖啡早餐</li>
+        <li><span class="act-time">10:30</span>外宮（豊受大神宮）：伊勢市站步行5分鐘即達正宮。傳統參拜順序「先外宮後内宮」，外宮主祀衣食住之神豊受大御神。砂利道上石燈籠古樸莊嚴，20分即可完成參拜，不需門票</li>
+        <li><span class="act-time">12:00</span>搭外宮内宮 循環バス（15分・¥170，含在近鉄週遊券）→ 内宮宇治橋前。宇治橋全長102m，每20年重建一次與正宮同步，過橋即進入神域</li>
+        <li><span class="act-time">12:30</span>内宮（皇大神宮）全行程重點！五十鈴川御手洗場洗手淨身 → 第一鳥居 → 第二鳥居 → 御正宮。正宮内部嚴禁攝影，只能在玉砂利前合掌。旁邊荒祭宮可拍照，氣氛最神聖</li>
+        <li><span class="act-time">14:00</span>おかげ横丁（おはらい町連接）：江戸・明治建築復原商店街約800m。必吃：赤福本店（現做麻糬¥360/2個+茶，僅當日食用）・豚捨コロッケ（¥150，炸牛肉餅邊走邊吃）・伊勢うどん（麺超軟Q浸濃醬）・へんば餅</li>
+        <li><span class="act-time">16:30</span>近鉄伊勢市駅 → 鳥羽駅（普通車25分・¥350）。鳥羽站有旅館免費接送巴士，check-in前先確認旅館接駁時刻表</li>
+        <li><span class="act-time">17:30</span>鳥羽旅館 check-in：換浴衣（浴衣穿法旅館有解說）→ 露天溫泉（面海溫泉，冬天泡湯配海景最療癒）→ 晚餐前在館内閒逛</li>
       </ul>
       <div class="meal-row">
-        <span class="meal-tag">🍡 午餐：豚捨コロッケ + 伊勢うどん（おかげ横丁）</span>
-        <span class="meal-tag">🦞 晚餐：旅館 海女料理懷石（伊勢海老・鮑魚・海膽）</span>
+        <span class="meal-tag">🍡 午餐：おかげ横丁 散食（赤福麻糬 + 豚捨コロッケ + 伊勢うどん，合計¥1,000-1,500）</span>
+        <span class="meal-tag">🦞 晚餐：旅館 海女料理懷石（伊勢海老造り・鮑魚酒蒸・サザエ壺焼・生海膽，10道以上全套）</span>
       </div>
-      <div class="tip-box">💡 赤福麻糬僅限當天食用，伴手禮版冷藏裝可帶回。おかげ横丁逛到忘記時間是正常的！</div>
+      <div class="tip-box">💡 近鉄週遊フリーきっぷ（¥5,400）含難波⇔伊勢特急自由席往返 + 伊勢・鳥羽 巴士無限搭。若無週遊券，購買「まわりゃんせ」4日券（¥16,000）更全面涵蓋鳥羽水族館門票。赤福伴手禮版「赤福餅」冷藏包可帶回台灣，當天購買真空包裝</div>
     </div>
   </div>
 
@@ -427,20 +433,21 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">🦦 鳥羽水族館 → 京都 聖誕夜</div>
         <div class="day-date-tag">12/24 (四) 聖誕夜 🎄</div>
       </div>
-      <div class="day-loc">📍 鳥羽 → 大和八木 → 京都（近鉄 約2.5小時）</div>
+      <div class="day-loc">📍 鳥羽 → 大和八木乗換 → 京都（近鉄特急 約2.5小時）</div>
       <ul class="acts">
-        <li><span class="act-time">09:30</span>鳥羽水族館（¥2,800）：日本種類最多1,200種</li>
-        <li><span class="act-time">10:00</span>先確認儒艮・海獺投食時間（1日2-3次），全日本僅剩1隻海獺！</li>
-        <li><span class="act-time">12:00</span>退房，近鉄鳥羽 → 大和八木乗換 → 京都（特急¥3,940）</li>
-        <li><span class="act-time">15:30</span>京都酒店 check-in</li>
-        <li><span class="act-time">17:00</span>八坂神社・円山公園 聖誕燈飾</li>
-        <li><span class="act-time">18:00</span>祇園 花見小路 夜間散步（石板路・舞妓街道）</li>
+        <li><span class="act-time">08:30</span>旅館早餐（通常07:30-09:00，日式和食御膳・味噌湯・烤魚・醃漬物）。旅館早餐是日本旅遊精髓之一，悠閒享用不要趕</li>
+        <li><span class="act-time">09:30</span>旅館 check-out，步行或接駁到鳥羽水族館（¥2,800）。開館時間 09:00，此時人較少。先確認當日儒艮（Dugong）・海獺（カワウソ）投食時間表（1日2-3次），入場後先衝目標時段</li>
+        <li><span class="act-time">10:00</span>鳥羽水族館重點區：①ジュゴンの海（全日本唯一儒艮・東南亞稀有海牛）② 海女の海（Pearl Diver Tank・海女潛水表演）③ 猛毒の海（危険生物特別展）④ 伊勢志摩の海（當地魚介生態）。展館共12区域，停留2-2.5小時剛好</li>
+        <li><span class="act-time">12:00</span>出館，鳥羽駅前 lunch，然後搭近鉄鳥羽 → 大和八木（特急50分）→ 大和八木乗換 → 近鉄京都（特急45分），全程含等待約2.5小時</li>
+        <li><span class="act-time">15:30</span>京都酒店 check-in，放好行李，稍作休息</li>
+        <li><span class="act-time">17:00</span>地鐵東山站步行 → 八坂神社（免費・24小時）：聖誕夜紅燈籠與石燈點亮，境内熱鬧有小攤。円山公園的枝垂桜骨架在冬日燈光下也很美</li>
+        <li><span class="act-time">18:00</span>祇園 花見小路：京都最有名的石板路，兩側江戸時代置屋・茶屋建築。夜間8點前後偶有舞妓出現（外出應客中），拍照不要擋路。巽橋（白川沿岸・岡崎神社方向）是絕景拍照點</li>
       </ul>
       <div class="meal-row">
-        <span class="meal-tag">🍱 午餐：鳥羽 港口周邊咖啡食堂</span>
-        <span class="meal-tag">🎄 晚餐：祇園丸山 或 京料亭懷石（聖誕夜特別套餐・需提前預約）</span>
+        <span class="meal-tag">🍣 午餐：鳥羽駅前 とば壱（海鮮定食，伊勢海老汁¥1,200）</span>
+        <span class="meal-tag">🎄 晚餐：祇園 京都吉兆 or 丸山（聖誕夜特別コース需2-3個月前預約・¥18,000-30,000/人）或 木屋町の鉄板焼（比較好訂位）</span>
       </div>
-      <div class="special-box">🎄 聖誕夜的京都祇園非常夢幻，八坂神社紅燈籠配聖誕氣氛，強烈推薦晚間散步花見小路</div>
+      <div class="special-box">🎄 聖誕夜（12/24）的京都：八坂神社燈飾 + 花見小路石板路倒影 + 白川沿岸柳樹，三者連走約1小時，是本次行程最夢幻的夜晚。高級料亭務必提前2-3個月預約，12月聖誕期全部爆滿</div>
     </div>
   </div>
 
@@ -451,20 +458,21 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">🍵 京都精華：清水寺・祇園・錦市場</div>
         <div class="day-date-tag">12/25 (五) 聖誕節</div>
       </div>
-      <div class="day-loc">📍 京都市内 東山</div>
+      <div class="day-loc">📍 京都市内 東山（地鐵東山站 or 市巴士207）</div>
       <ul class="acts">
-        <li><span class="act-time">08:30</span>清水寺（¥500）早晨清淨・薄霧最美・音羽の滝三道水許願</li>
-        <li><span class="act-time">10:00</span>二年坂・三年坂 石板坡道（京雜貨・小店）</li>
-        <li><span class="act-time">11:30</span>祇園 白川・巽橋（京都最上鏡頭感地點）</li>
-        <li><span class="act-time">13:00</span>錦市場（京都の台所）：湯葉・漬物・玉子焼・試吃一路吃飽</li>
-        <li><span class="act-time">15:00</span>建仁寺（¥800）・雙龍圖天花板・枯山水石庭</li>
-        <li><span class="act-time">17:00</span>四条河原町 聖誕採購・大丸京都</li>
+        <li><span class="act-time">08:00</span>清水寺（¥500，開放06:00）：聖誕節早晨最美。清晨薄霧中的清水舞台（懸崖木架式建築・不用一根釘子）氣氛空靈。音羽の瀧三道水各有意涵（智慧・健康・愛情），排隊舀一道即可（傳說喝三道反而不好）</li>
+        <li><span class="act-time">09:30</span>二年坂・三年坂：石板坡道、京雜貨、老陶器店、ANNY京都、七味屋（七味粉），清晨人最少。途中「スターバックス二年坂」（1818年建築改造）是全球最美星巴克之一</li>
+        <li><span class="act-time">10:30</span>祇園 白川沿岸：柳樹夾道、石橋、茶屋の格子窗，巽橋（辰巳橋）是京都最具代表性的拍照地點。早上10點前光線側射非常漂亮。新橋通り往北走也有白壁土牆老街</li>
+        <li><span class="act-time">11:30</span>祇園商店街：祇園 鍵善良房（くずきり葛條¥1,100・1753年創業）、祇園辻利（抹茶霜淇淋）。或步行到東大路四条的「七味屋本舗」買調味料伴手禮</li>
+        <li><span class="act-time">13:00</span>錦市場（錦小路通・長390m）：「京都の台所」。必吃：三木鶏卵 玉子焼（¥250）・打田漬物（試吃多種漬物）・有次（包丁・廚具老店）・近江屋 湯葉刺身。市場只有步行，傍晚較擠，午後來剛好</li>
+        <li><span class="act-time">15:00</span>建仁寺（¥800，開放10:00）：京都最古禅寺（1202年）。法堂天花板「双龍図」（畠山大輔作）45m×22m震撼巨作，枯山水「○△□庭」禪意設計，境内可自由漫步・免票部分廣大</li>
+        <li><span class="act-time">17:00</span>四条河原町：大丸京都（B1-B2食品伴手禮・阿闍梨餅・辻利）、ファッションビルOPA、高島屋京都。聖誕節期間有街頭音樂演出</li>
       </ul>
       <div class="meal-row">
-        <span class="meal-tag">🥢 午餐：錦市場邊走邊吃（¥1,500輕鬆搞定）</span>
-        <span class="meal-tag">🌸 晚餐：瓢亭別館 或 菊乃井（需提前預約・京都傳統懷石）</span>
+        <span class="meal-tag">🥢 午餐：錦市場邊走邊吃（玉子焼 + 湯葉 + 京漬物 + 若狭家 ぬか漬け，合計¥1,500）</span>
+        <span class="meal-tag">🌸 晚餐：瓢亭別館（¥15,000 朝粥懷石・需提前預約）或 菊乃井木屋町店（¥22,000-・同需預約）</span>
       </div>
-      <div class="tip-box">💡 清水寺08:30前到達人少一半！旺季門票建議先在官網購買</div>
+      <div class="tip-box">💡 清水寺06:00就開放，08:30前到達遊客少一半！12月旺季建議官網購買電子票（きよみず寺ウェブチケット），不用排現場購票。建仁寺是所有京都大寺裡人潮最少、性價比最高的一間</div>
     </div>
   </div>
 
@@ -475,20 +483,21 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">🎮 宇治・任天堂博物館 + 平等院</div>
         <div class="day-date-tag">12/26 (六)</div>
       </div>
-      <div class="day-loc">📍 JR京都 → 宇治（20分・¥240）</div>
+      <div class="day-loc">📍 JR京都 → 宇治（JR宇治線 20分・¥240）</div>
       <ul class="acts">
-        <li><span class="act-time">09:00</span>JR宇治線出發，宇治站步行10分到博物館</li>
-        <li><span class="act-time">10:30</span>任天堂博物館（¥3,300・每人10枚金幣）・超級瑪利歐・Game Boy・紅白機互動體驗</li>
-        <li><span class="act-time">12:30</span>金幣分配建議：大型搖桿Game & Watch（10枚）→ Game Boy（8枚）優先</li>
-        <li><span class="act-time">13:00</span>中村藤吉 本店（宇治站旁）・抹茶餡蜜・生茶ゼリィ（必排）</li>
-        <li><span class="act-time">14:30</span>平等院鳳凰堂（¥1,000）・10円硬幣上的建築・世界遺産</li>
-        <li><span class="act-time">16:30</span>宇治川散步 → JR返回京都</li>
+        <li><span class="act-time">09:00</span>JR京都站月台搭宇治線，09:20 抵宇治站。站前有宇治抹茶 vending machine，¥200暖身。步行10分到任天堂博物館（京都府宇治市小倉町神楽田56）</li>
+        <li><span class="act-time">10:30</span>任天堂博物館（¥3,300・抽選制）：入場附送10枚「ニンテンドーコイン」（館内遊戲機幣）。展示橫跨70年遊戲歷史：花札・かるた原點 → Game & Watch → 紅白機 → SFC → N64 → GameCube → Wii → Switch。互動體驗區人氣最旺</li>
+        <li><span class="act-time">12:00</span>金幣分配策略：大型搖桿「BALL」（遊戲&ウォッチ原作機台，10枚）→ 巨大ゲームボーイ（8枚）→ 超大サイズ花火師（6枚，類俄羅斯方塊）。每人限入場一次，先看完展再玩效果最好</li>
+        <li><span class="act-time">13:00</span>中村藤吉 宇治本店（1854年創業）：館前步行5分。生茶ゼリィ入り（¥1,300，抹茶ゼリー+白玉+あんこ）是鎮店之寶。外帶「生/抹茶ソフトクリーム」（¥650）邊走邊吃也好。旺季建議11:30前排隊</li>
+        <li><span class="act-time">14:30</span>平等院鳳凰堂（¥1,000，開放08:30）：建於1052年，日本10円硬幣上的建築・UNESCO世界遺産。鳳翔館（附屬博物館）收藏国宝雲中供養菩薩像52体，非常震撼。鳳凰堂内部参観（追加¥300・限定人數）建議加購</li>
+        <li><span class="act-time">15:30</span>宇治川沿岸散步：橘島・塔の島（小島上有十三重石塔）、源氏物語ミュージアム（¥600，與宇治橋十帖相關）、川端通り的抹茶店一字排開</li>
+        <li><span class="act-time">17:00</span>JR宇治 → 京都（20分）返回，或順道在奈良線伏見稲荷大社站下（¥200），黄昏千本鳥居人少光線美</li>
       </ul>
       <div class="meal-row">
-        <span class="meal-tag">🍵 午餐：中村藤吉 抹茶套餐</span>
-        <span class="meal-tag">🍜 晚餐：山元麺蔵（京都tsukemen名店・值得排隊）</span>
+        <span class="meal-tag">🍵 午餐：中村藤吉 本店 生茶ゼリィ套餐（¥1,300-1,800，建議訂位或11:30前到）</span>
+        <span class="meal-tag">🍜 晚餐：山元麺蔵（京都二条・つけ麺元祖，招牌「土ごぼうつけ麺」¥1,350・開店30分前排隊）</span>
       </div>
-      <div class="warn-box">⚠️ 任天堂博物館全面抽選制（museum.nintendo.com），每月底開放下個月預約，12/26需於11月底搶票。週二定休</div>
+      <div class="warn-box">⚠️ 任天堂博物館完全抽選制（museum.nintendo.com）：每月最終週（週五前後）開放翌月預約。12/26（六）需在 11月末 搶票。定休日：週二・年末年始。出發前確認官網！</div>
     </div>
   </div>
 
@@ -499,20 +508,21 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">✨ 金閣寺・嵐山・二条城</div>
         <div class="day-date-tag">12/27 (日) 最後完整一天</div>
       </div>
-      <div class="day-loc">📍 京都市内 北部 → 嵐山</div>
+      <div class="day-loc">📍 京都市内 北部 → 嵐山（地鐵金閣寺道 → 市巴士59）</div>
       <ul class="acts">
-        <li><span class="act-time">09:00</span>金閣寺（¥500）・黃金倒影・冬日清晨人最少</li>
-        <li><span class="act-time">10:30</span>龍安寺（¥600）・世界最有名枯山水石庭</li>
-        <li><span class="act-time">12:00</span>嵐山・竹林の道（免費）・渡月橋</li>
-        <li><span class="act-time">13:00</span>嵐山 天龍寺（¥800 庭園）・世界遺産禪寺</li>
-        <li><span class="act-time">15:30</span>返市區・二条城（¥800）・德川幕府遺跡</li>
-        <li><span class="act-time">17:30</span>京都駅 最終伴手禮（551蓬莱・阿闍梨餅・八橋）</li>
+        <li><span class="act-time">08:30</span>金閣寺（¥500，開放09:00，但08:30人少）：北山鹿苑寺金閣，鏡湖池水面完美倒影是京都最代表性景觀。冬季晴天的黃金反射最清晰，建議09:00左右到，10:30後人潮洶湧</li>
+        <li><span class="act-time">10:00</span>龍安寺（¥600，步行20分）：枯山水石庭「虎の子渡し」（15塊石頭，任何角度只能看到14塊），哲學謎題延伸千年。冬日無人的石庭靜謐感最強。境内鏡容池倒影楓樹亦美</li>
+        <li><span class="act-time">11:00</span>市巴士26 → 嵐山（30分），抵渡月橋。渡月橋（長155m）是嵐山地標，大堰川上架橋，背景嵐山松林。冬日比秋葉季人少，拍照更從容</li>
+        <li><span class="act-time">12:00</span>竹林の道（免費，全長約400m）：高大孟宗竹遮天蔽日，清晨或傍晚光線最佳。連接常寂光寺方向可延伸漫步。往北轉入野宮神社（緑苔參道・戀愛祈願）</li>
+        <li><span class="act-time">13:00</span>天龍寺（曹源池庭園¥500・伽藍¥800）：禅寺境内可眺望嵐山全景。鐘樓旁有600年竹林入口（私有・免費通行），比「竹林の道」更無人</li>
+        <li><span class="act-time">15:00</span>市巴士返市區 → 二条城（¥800，開放08:45）：德川家康1603年建，徳川慶喜大政奉還の地。二の丸御殿（国宝，內部可參觀）地板「うぐいす張り」（鶯張迴廊，走動會發出聲響・防刺客設計）</li>
+        <li><span class="act-time">17:30</span>京都駅 B1F「THE CUBE」最終伴手禮衝刺：551蓬莱豚まん（熱騰騰帶上飛機）・阿闍梨餅（生菓子・真空袋）・京都タワー下「おみやげ小路」・伊勢丹 B2 食品館</li>
       </ul>
       <div class="meal-row">
-        <span class="meal-tag">🥢 午餐：嵐山 竹路庭 湯豆腐套餐（嵐山景色中用餐）</span>
-        <span class="meal-tag">🍴 晚餐：夷川餃子 なかじま（京都在地隱藏版）</span>
+        <span class="meal-tag">🥢 午餐：嵐山 竹路庭 湯豆腐定食（¥3,850，嵐山川景中用餐，需訂位）或 Arabica Coffee（¥750，嵐山最美外帶咖啡）</span>
+        <span class="meal-tag">🍴 晚餐：夷川餃子 なかじま（御池通・京都在地人最愛的焼餃子・手工皮薄多汁，¥1,500無需訂位）</span>
       </div>
-      <div class="tip-box">💡 嵐山竹林09:00前到人少光線好。行李可寄飯店，輕裝出發</div>
+      <div class="tip-box">💡 金閣寺→龍安寺步行20分，全程可不搭巴士。嵐山の竹林09:00前到光線最漂亮且人最少。二条城地板「うぐいす張り」是日本古代安全防盜的智慧，踩踏時聽鶯聲是體驗重點</div>
     </div>
   </div>
 
@@ -523,14 +533,16 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">✈️ 啟程回台灣</div>
         <div class="day-date-tag">12/28 (一) 退房・回程</div>
       </div>
-      <div class="day-loc">📍 京都 → JR はるか → KIX → 桃園</div>
+      <div class="day-loc">📍 京都 → JR はるか → KIX → 桃園（TPE）</div>
       <ul class="acts">
-        <li><span class="act-time">早晨</span>退房整理行李（建議前一晚用ヤマト宅急便寄行李到機場）</li>
-        <li><span class="act-time">起飛-3h</span>JR京都站搭特急はるか → 關西空港（80分・¥1,880），提前3小時出發</li>
-        <li><span class="act-time">機場</span>KIX 免稅店最後採購：化妝品・零食・藥妝</li>
-        <li><span class="act-time">——</span>✈️ 飛返桃園！</li>
+        <li><span class="act-time">早晨</span>退房整理行李。若前一晚已辦理ヤマト宅急便（クロネコヤマト宅急便）寄送，行李已送往KIX第一航廈指定取件所，可輕裝出門</li>
+        <li><span class="act-time">起飛-3.5h</span>JR京都站 搭特急「はるか」→ 關西空港（全程80分・¥1,880，持外國護照可購買¥1,500優待票）。京都站搭乘月台確認：0番線（はるか専用）。行李多建議加購對號座（自由席較擁擠）</li>
+        <li><span class="act-time">KIX抵達</span>JR關西空港站直通第二航廈（JR/南海），再步行或搭接駁巴士至第一航廈（桃園航班多在T1）。確認班機出發航廈！</li>
+        <li><span class="act-time">機場</span>辦理 check-in（建議線上預辦）→ 提領托運行李（若有寄送）→ 出境稅關 → 免稅店（化妝品・藥妝・洋酒・零食）</li>
+        <li><span class="act-time">免稅區</span>KIX 免稅亮點：Duty Free Kintetsu（茅台・軒尼詩）、ANA FESTA（關西限定零食）、資生堂・SK-II（比市價便宜10-20%）。口袋清空最後一搏！</li>
+        <li><span class="act-time">——</span>✈️ 飛返桃園！11天關西美好旅程圓滿結束。スタンプを集めた？（有沒有蓋到想要的章？）</li>
       </ul>
-      <div class="tip-box">💡 ヤマト宅急便：前一晚在飯店辦理 → 隔日在機場指定時間取件，每件約¥2,000-3,000，輕鬆逛到最後一秒</div>
+      <div class="tip-box">💡 ヤマト宅急便空港宅配：前一晚在飯店 check-out 前辦理，翌日09:00-21:00 在KIX第一航廈「ヤマト宅急便受取カウンター」取件，每件¥2,000-3,000。帶很多伴手禮強烈推薦，進出關輕鬆多了。ICOCA 記得在自動售票機退押金¥500！</div>
     </div>
   </div>
 
@@ -607,15 +619,17 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">✈️ 抵達大阪・取車・道頓堀</div>
         <div class="day-date-tag">12/18 (五)</div>
       </div>
-      <div class="day-loc">📍 KIX 取車 → 大阪市區（約40分）</div>
+      <div class="day-loc">📍 KIX → 阪神高速 → 大阪市區（約40分）</div>
       <ul class="acts">
-        <li><span class="act-time">落地後</span>KIX 2F 取租車（Toyota/Times）・確認 ETC 卡・設定導航</li>
-        <li><span class="act-time">車行</span>阪神高速 → 大阪市區，約40分（¥800-1,200 高速費）</li>
-        <li><span class="act-time">下午</span>停車入庫，步行心齋橋・美國村逛街</li>
-        <li><span class="act-time">晚上</span>道頓堀夜景散步，固力果打卡</li>
+        <li><span class="act-time">落地後</span>KIX 2F 南側 租車還車区へ：Toyota Rent a Car / Times Car Rental 均在同棟。取車確認項目：ETC カード裝好（必要！否則一般收費閘口需停車排隊）・周邊損傷照相記錄・日文導航設定目的地「難波 ホテル」</li>
+        <li><span class="act-time">車行</span>阪神高速 関空自動車道 → 阪神高速4号湾岸線 → なんば（約40分・ETC約¥960）。第一次開日本高速建議導航全程語音，勿邊開邊看手機</li>
+        <li><span class="act-time">到達</span>市區停車：難波周邊有「タイムズ難波」「IPark難波」等計費停車場（¥700-1,200/小時）。或酒店有停車場方案（¥1,500-2,500/晚・更划算）。停好車就全程步行</li>
+        <li><span class="act-time">下午</span>ICOCA 在難波站購買（¥2,000含¥500押金），店舗・巴士・景點全用得到。心齋橋筋商店街（拱廊全長1km）・美國村（アメリカ村）舊貨街頭藝術</li>
+        <li><span class="act-time">17:30</span>道頓堀夜景點亮：固力果跑跑人（戎橋・必拍）→ 蟹道楽巨蟹爪 → 一條街章魚燒試吃。道頓堀遊覧船（¥900，20分）從水面看霓虹燈最震撼</li>
+        <li><span class="act-time">晚上</span>戎橋筋・Don Quijote 24小時（藥妝・零食・電器）第一天先掃貨，確認明日早起時間</li>
       </ul>
-      <div class="meal-row"><span class="meal-tag">🍜 晚餐：金龍拉麵 道頓堀（24小時・龍型地標）</span></div>
-      <div class="tip-box">💡 市區第一天先適應，停好車就步行。ICOCA 仍需買，景點和便利商店都用得到</div>
+      <div class="meal-row"><span class="meal-tag">🍜 晚餐：金龍拉麵 道頓堀（24小時・龍型外牆地標，醬油豚骨¥850）</span></div>
+      <div class="tip-box">💡 KIX取車建議選「小型車（コンパクトカー）」如 Toyota Aqua/Yaris，京都・大阪窄街巷較好停。ETC 卡一定要確認裝好，高速出口若無ETC走人工收費車道，收費較貴且需排隊</div>
     </div>
   </div>
 
@@ -626,20 +640,21 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">🌉 淡路島ドライブ + 神戶（自駕精華日）</div>
         <div class="day-date-tag">12/19 (六)</div>
       </div>
-      <div class="day-loc">📍 大阪 → 明石海峡大橋 → 淡路島 → 神戶 → 大阪</div>
+      <div class="day-loc">📍 大阪 → 明石海峡大橋 → 淡路島 → 神戶三宮 → 大阪</div>
       <ul class="acts">
-        <li><span class="act-time">09:00</span>神戸淡路鳴門自動車道 → 明石海峡大橋（世界最長吊橋）壯觀眺望</li>
-        <li><span class="act-time">10:00</span>淡路島上陸！大鳴門橋遊步道・鳴門渦潮展望（¥510）</li>
-        <li><span class="act-time">12:00</span>淡路島 lunch：名産玉ねぎ料理・淡路バーガー</li>
-        <li><span class="act-time">14:00</span>返回本州 → 神戶三宮（30分）</li>
-        <li><span class="act-time">14:30</span>北野異人館街・ハーバーランド Mosaic</li>
-        <li><span class="act-time">17:30</span>高速返大阪（35分）</li>
+        <li><span class="act-time">09:00</span>阪神高速 → 第二神明道路 → 神戸淡路鳴門自動車道（ETC約¥2,570含明石海峡大橋通行費）。橋上開車視野壯觀，世界最長吊橋（中央徑間1,991m），天氣晴好時甲子園球場都看得見</li>
+        <li><span class="act-time">10:00</span>淡路島南下：①「道の駅 うずしお」（免費）停車拍大鳴門橋 → ②大鳴門橋架橋記念館 エディ（¥510）：橋面下方玻璃透明步道可俯視45m下渦潮！鳴門渦潮規模依潮汐潮差，提前查「鳴門の渦潮 潮時表」官網選最大潮時段</li>
+        <li><span class="act-time">12:00</span>淡路島名産 lunch：「道の駅 福良」或「淡路サービスエリア上り」→ 淡路島バーガー（特産玉ねぎ入り和牛漢堡¥1,200）・淡路島産玉ねぎ豚丼。淡路島玉ねぎ全日本甜度最高</li>
+        <li><span class="act-time">14:00</span>北上返本州：神戸淡路鳴門自動車道 → 第二神明 → 神戶三宮（30分）。三宮周邊停車場（¥400-600/小時，ハーバーランド周辺がお得）</li>
+        <li><span class="act-time">14:30</span>北野異人館街（坡道步行20分）：風見鶏の館（¥650）・萌黄の館（¥400）・英国館（¥750），3館共通券¥1,500最划算。異人館区展示明治時代外國商人生活，坡頂可眺望神戶港</li>
+        <li><span class="act-time">16:30</span>ハーバーランド：Mosaic 商業設施・神戸ポートタワー（¥1,000・玻璃觀景台）・メリケンパーク「BE KOBE」文字板夕陽打卡</li>
+        <li><span class="act-time">17:30</span>阪神高速 → 返大阪（約35分・ETC¥680）</li>
       </ul>
       <div class="meal-row">
-        <span class="meal-tag">🧅 午餐：淡路島 玉ねぎバーガー 或 淡路島牛丼</span>
-        <span class="meal-tag">🥩 晚餐：モーリヤ本店 神戶牛（或返大阪・福太郎）</span>
+        <span class="meal-tag">🧅 午餐：淡路島 玉ねぎバーガー（道の駅うずしお 或 淡路SA，¥1,200-1,500）</span>
+        <span class="meal-tag">🥩 晚餐：モーリヤ本店 神戶牛鐵板燒（1930年創業，午餐¥5,500起，晚餐¥12,000+，需提前訂位）或返大阪・福太郎 大阪燒</span>
       </div>
-      <div class="tip-box">💡 淡路島通行費（本四高速）約¥2,570，ETC 同價但無須停車。鳴門渦潮最大發生時間查官網曆法</div>
+      <div class="tip-box">💡 淡路島通行費（本四高速）ETC ¥2,570（來回共¥5,140）。鳴門渦潮的「大潮」1天只有2-4次，規模最大，建議提前查「鳴門海峡の干満時刻表」確認當日最佳觀潮時間（通常潮差3m以上最壯觀）</div>
     </div>
   </div>
 
@@ -650,19 +665,20 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">🏯 姫路城 世界遺産（自駕限定精華）</div>
         <div class="day-date-tag">12/20 (日)</div>
       </div>
-      <div class="day-loc">📍 大阪 → 姫路（山陽自動車道・約70分）→ 大阪</div>
+      <div class="day-loc">📍 大阪 → 姫路（山陽自動車道・約70分）→ 大阪（退房日）</div>
       <ul class="acts">
-        <li><span class="act-time">08:30</span>出發，山陽自動車道 西宮IC → 姫路IC（ETC約¥1,380）</li>
-        <li><span class="act-time">10:00</span>姫路城（¥1,000）・日本最美白鷺城・UNESCO世界遺産，登天守閣俯瞰全城</li>
-        <li><span class="act-time">12:00</span>好古園（¥310）・城旁江戸庭園，冬日末楓殘紅</li>
-        <li><span class="act-time">13:30</span>姫路おでん lunch（薑醬油沾醬・全日本唯一）</li>
-        <li><span class="act-time">15:30</span>返回大阪（70分），沿途可停神戶</li>
+        <li><span class="act-time">08:00</span>酒店 check-out（今日退房），行李全上車。山陽自動車道 西宮IC → 姫路IC（ETC約¥1,380，70分）。姫路駅北側停車場（¥600-800/日・最划算）或姫路城東side的「城の西御屋敷跡庭園」前停車場</li>
+        <li><span class="act-time">10:00</span>姫路城（¥1,000，開放09:00）：日本12座現存天守閣中最大・最美。正式名稱「白鷺城」因白漆牆壁如白鷺展翅得名。登天守閣（6層）需脫鞋，頂層360度俯瞰播磨平野，晴天可見淡路島遠影。旺季階梯狹窄，預留1.5小時</li>
+        <li><span class="act-time">11:30</span>好古園（¥310，姫路城旁步行3分）：江戸時代武家屋敷遺址上建造的回遊式庭園，9個風格各異主題庭園連結，冬日末楓殘紅加枯山水，甚有侘寂之美</li>
+        <li><span class="act-time">13:00</span>姫路おでん lunch：全日本唯一以「薑醬油」取代芥末醬汁的おでん（關東煮），大根・こんにゃく・たまご一串不停。車站周邊「姫路おでんの店 たこ梅」或「駅前食堂」最道地，¥1,000-1,500吃到滿</li>
+        <li><span class="act-time">15:00</span>返回大阪（山陽自動車道 → 阪神高速，70分）。途中可在「神戸三木SA（下り）」休息補給，有播磨名産零食選購</li>
+        <li><span class="act-time">17:00</span>抵大阪，前往下一段行程的新酒店（鳥羽方向出發前）check-in，整裝休息</li>
       </ul>
       <div class="meal-row">
-        <span class="meal-tag">🍢 午餐：姫路おでん（たこ梅 或 駅前食堂）</span>
-        <span class="meal-tag">🥘 晚餐：返大阪・串かつだるま 新世界本店</span>
+        <span class="meal-tag">🍢 午餐：姫路おでん（たこ梅 or 駅前食堂，薑醬油沾大根・卵・こんにゃく，¥1,000-1,500）</span>
+        <span class="meal-tag">🥘 晚餐：返大阪・串かつだるま 新世界本店（1929年創業・二度漬け禁止的炸串聖地）</span>
       </div>
-      <div class="tip-box">💡 週日人多，10點前到姫路城。退房大阪在此日，行李全上車前往下一段行程</div>
+      <div class="tip-box">💡 今日是大阪退房日，行李全上車。姫路城週六日人多，09:00前到天守閣入口排隊最短。好古園與姫路城是鄰居，買套票（¥1,220）比分開購更省。12月有「姫路城×冬の光の祭」夜間彩燈活動，若非趕路可留到日落</div>
     </div>
   </div>
 
@@ -673,20 +689,20 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">⛩️ 自駕 大阪 → 伊勢神宮 → 伊勢志摩スカイライン → 鳥羽</div>
         <div class="day-date-tag">12/21 (一) 大阪 → 鳥羽</div>
       </div>
-      <div class="day-loc">📍 大阪 → 伊勢（伊勢自動車道・約2.5小時）→ 鳥羽</div>
+      <div class="day-loc">📍 大阪 → 伊勢（西名阪→伊勢自動車道・約2.5小時）→ 鳥羽</div>
       <ul class="acts">
-        <li><span class="act-time">08:30</span>check-out 大阪，行李全上車，西名阪→伊勢自動車道</li>
-        <li><span class="act-time">11:30</span>外宮停車（免費），先拜外宮（豊受大神宮）</li>
-        <li><span class="act-time">13:00</span>開車→内宮（5分），内宮停車場（¥500）</li>
-        <li><span class="act-time">13:30</span>内宮参拝 → おかげ横丁散策</li>
-        <li><span class="act-time">15:30</span>伊勢志摩スカイライン（¥1,270）展望台絕景 → 鳥羽側下山</li>
-        <li><span class="act-time">17:00</span>鳥羽旅館 check-in，免費停車場</li>
+        <li><span class="act-time">08:30</span>大阪 check-out，行李全上車。西名阪自動車道 → 名阪国道（无料・注意弯道）→ 伊勢自動車道 伊勢IC（合計ETC約¥2,000-2,400，時間約2.5小時）。路況順暢時可提前到達</li>
+        <li><span class="act-time">11:30</span>外宮（豊受大神宮）：外宮専用駐車場（免費）停車，步行5分抵正宮。傳統「先外宮後内宮」參拜順序。外宮神苑安靜清幽，20-30分完成</li>
+        <li><span class="act-time">13:00</span>開車→内宮（5分），内宮 A2停車場（¥500，旺季需早到）。宇治橋渡橋進神域，五十鈴川御手洗場洗手 → 第一鳥居 → 第二鳥居 → 御正宮（正宮内部禁止攝影）→ 荒祭宮（可拍照）</li>
+        <li><span class="act-time">13:30</span>おかげ横丁・おはらい町（800m）：赤福本店（現做麻糬¥360/2個+茶）・豚捨コロッケ（¥150）・伊勢うどん（濃醬超Q麵）・へんば餅・岩戸屋（伊勢名物多）</li>
+        <li><span class="act-time">15:30</span>⭐ 自駕限定：伊勢志摩スカイライン（¥1,270，開放07:00-19:00）。從内宮側上山，途經朝熊山頂展望台（海拔555m，志摩半島・英虞湾パノラマ大絕景），再從鳥羽側下山到海邊，自駕才能輕鬆完成此路線</li>
+        <li><span class="act-time">17:00</span>鳥羽旅館 check-in：旅館均附免費駐車場（比大阪省很多）。換浴衣 → 露天溫泉（面海溫泉，冬日最療癒）→ 準備晚餐</li>
       </ul>
       <div class="meal-row">
-        <span class="meal-tag">🍡 午餐：おかげ横丁（赤福・豚捨・伊勢うどん）</span>
-        <span class="meal-tag">🦞 晚餐：旅館 海女料理（伊勢海老・鮑魚・サザエ）</span>
+        <span class="meal-tag">🍡 午餐：おかげ横丁 散食（赤福麻糬 + 豚捨コロッケ + 伊勢うどん，合計¥1,000-1,500）</span>
+        <span class="meal-tag">🦞 晚餐：旅館 海女料理懷石（伊勢海老造り・鮑魚酒蒸・サザエ壺焼・生海膽，10道全套）</span>
       </div>
-      <div class="tip-box">💡 伊勢志摩スカイライン是自駕限定路線！鳥羽から朝日を見るなら早朝がベスト。普通票¥1,270完全值得</div>
+      <div class="tip-box">💡 伊勢志摩スカイライン是「自駕ONLY」路線，無公共交通可達！朝熊山頂展望台天氣晴朗時可遠望富士山（極罕見），英虞湾的珍珠養殖筏也一覽無遺。票價¥1,270完全值得</div>
     </div>
   </div>
 
@@ -697,20 +713,22 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">🦦 鳥羽水族館 → 🌸 名花之里燈飾 → 京都</div>
         <div class="day-date-tag">12/22 (二) 超長精華日！</div>
       </div>
-      <div class="day-loc">📍 鳥羽 → 長島（約1.5小時）→ 京都（約1.5小時）</div>
+      <div class="day-loc">📍 鳥羽 → 松阪IC→東名阪道→長島IC（約1.5小時）→ 名神高速→京都（約1.5小時）</div>
       <ul class="acts">
-        <li><span class="act-time">09:30</span>鳥羽水族館（¥2,800）・儒艮・海獺・確認投食時間</li>
-        <li><span class="act-time">12:00</span>退房，高速上路：松阪IC→東名阪道→長島IC（約1.5小時）</li>
-        <li><span class="act-time">15:00</span>名花之里（なばなの里）抵達・¥3,000入場（含¥1,000消費券）</li>
-        <li><span class="act-time">16:30</span>🌟 日落後 LED 燈海盛開！百萬株百合田・光之河 震撼演出</li>
-        <li><span class="act-time">20:00</span>離開，名神高速 → 京都（1.5小時）</li>
-        <li><span class="act-time">22:00</span>京都酒店 check-in</li>
+        <li><span class="act-time">08:30</span>旅館早餐（通常07:30-09:00，豐盛日式御膳）。慢慢享用，這是鳥羽旅館住宿費的一部分</li>
+        <li><span class="act-time">09:30</span>鳥羽水族館（¥2,800，09:00開館）：入場先取當日「ジュゴン（儒艮）」「カワウソ（海獺）」投食時間表（1日2-3次）。全日本唯一儒艮「セレナ」・海獺・ラッコ（現存稀少），投食時間前15分搶占最前排</li>
+        <li><span class="act-time">11:00</span>水族館其他亮點：海女の海展示（Pearl Diver Tank）・伊勢志摩の海 local生態・猛毒の海 危険生物特別展・熱帯の海（珊瑚礁生態系），12區域建議停留1.5-2小時</li>
+        <li><span class="act-time">12:00</span>退房，高速上路：鳥羽IC → 松阪IC（伊勢自動車道）→ 東名阪自動車道 → 長島IC（約1.5小時・ETC約¥1,800）。長島 SA（東名阪）可休息補給</li>
+        <li><span class="act-time">15:00</span>なばなの里（¥3,000含¥1,000消費券）：日本最大規模燈飾樂園，位於長島渡假區（ナガシマスパーランド旁）。園内面積廣，建議先看主題展示再逛花田。¥1,000消費券可用於餐廳・美食攤・伴手禮</li>
+        <li><span class="act-time">16:30</span>🌟 日落後（約17:00）燈飾全點亮！光之河（イルミネーション大河）・百萬株百合田・隧道燈光秀，震撼程度難以用文字形容。拍照建議帶腳架（夜間攝影需穩定）</li>
+        <li><span class="act-time">20:00</span>離開長島IC，名神高速 → 京都（約1.5小時・ETC約¥1,200），約22:00抵京都</li>
+        <li><span class="act-time">22:00</span>京都酒店 check-in（預先告知晚到，確保房間保留到深夜），放行李洗澡休息</li>
       </ul>
       <div class="meal-row">
-        <span class="meal-tag">🍱 午餐：名花之里內餐廳（用¥1,000消費券）</span>
-        <span class="meal-tag">🍜 晚餐：抵京都宵夜・一蘭拉麵 京都店</span>
+        <span class="meal-tag">🍱 午餐：なばなの里 内餐廳（¥1,000消費券折抵・選當地牛鍋定食或うな丼）</span>
+        <span class="meal-tag">🍜 晚餐：到京都宵夜・一蘭拉麵 京都店（四条河原町・24小時・個室隔間・¥1,200）</span>
       </div>
-      <div class="special-box">✨ 名花之里自駕才輕鬆！大眾運輸需轉3次以上。12/22入場費僅¥3,000（一般票），比12/23-25聖誕特別票¥5,000省¥2,000/人</div>
+      <div class="special-box">✨ なばなの里 自駕才輕鬆！最近電車站（近鉄桑名・JR桑名）到園區還需搭接駁巴士，大眾運輸合計需轉3次+1小時。12/22入場¥3,000（一般票），比12/23-25聖誕特別票¥5,000省¥2,000/人！2人合計省¥4,000</div>
     </div>
   </div>
 
@@ -721,19 +739,20 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">🦌 奈良自駕（停車輕鬆・法隆寺可加入）</div>
         <div class="day-date-tag">12/23 (三)</div>
       </div>
-      <div class="day-loc">📍 京都 → 奈良（京奈和自動車道・40分・免費！）</div>
+      <div class="day-loc">📍 京都 → 奈良（京奈和自動車道・40分・無料！）</div>
       <ul class="acts">
-        <li><span class="act-time">09:00</span>開車→奈良市内，停奈良公園周邊停車場（¥600/日）</li>
-        <li><span class="act-time">10:00</span>奈良公園・鹿群・東大寺大佛殿（¥600）</li>
-        <li><span class="act-time">12:00</span>春日大社・ならまち 古町巷弄</li>
-        <li><span class="act-time">14:00</span>可加入：法隆寺（世界最古木造建築・¥1,500）開車20分可達</li>
-        <li><span class="act-time">16:30</span>返京都（40分）</li>
+        <li><span class="act-time">09:00</span>京都酒店出發，京奈和自動車道（完全免費高速！）→ 奈良市内（40分）。奈良公園周邊停車場（¥600/日・如「市営登大路P」）超划算，比搭電車來回車費還便宜</li>
+        <li><span class="act-time">10:00</span>奈良公園（免費）：鹿煎餅（¥200）餵鹿，約1,300頭天然記念物自由漫步，春日大社参道兩側鹿群最密集。鹿在冬天毛色較深，12月鹿群活力旺盛</li>
+        <li><span class="act-time">10:30</span>東大寺大佛殿（¥600，開放07:30）：世界最大木造建築・奈良大佛（毘盧遮那仏）高14.7m。中柱有「大佛鼻孔大小」的洞（直径37cm），鑽過去據說智慧提升。前方鏡池倒影大佛殿非常美</li>
+        <li><span class="act-time">12:00</span>春日大社（免費入境，寶物館¥500）→ ならまち（奈良町）：保留江戸・明治町屋的迷宮小巷，「格子の家」（免費参觀）傳統商家建構，猿沢池反倒五重塔漂亮</li>
+        <li><span class="act-time">14:00</span>⭐ 自駕加碼：法隆寺（¥1,500，開車15分）：世界最古木造建築（607年）・UNESCO世界遺産第一號。五重塔・金堂（国宝）・百済観音（超美細長佛像）。大眾交通需搭JR+巴士轉2次，自駕直達停車免費</li>
+        <li><span class="act-time">16:30</span>開車返京都（京奈和自動車道・40分）。傍晚返回可在烏丸御池商圈逛逛</li>
       </ul>
       <div class="meal-row">
-        <span class="meal-tag">🍱 午餐：平宗 柿の葉寿司（奈良本店）</span>
-        <span class="meal-tag">🍴 晚餐：京都・錦市場周邊居酒屋</span>
+        <span class="meal-tag">🍱 午餐：平宗 柿の葉寿司 奈良本店（1861年創業・鯖魚・鮭魚押壽司套餐¥1,870・ならまち内）</span>
+        <span class="meal-tag">🍴 晚餐：京都・錦市場周邊居酒屋 or 清水寺周辺の居酒屋「月の蔵人」（清酒直結）</span>
       </div>
-      <div class="tip-box">💡 自駕到奈良停車¥600/日，比大眾運輸來回車票還便宜！法隆寺是公共交通不便的世遺，自駕才能輕鬆加入</div>
+      <div class="tip-box">💡 自駕奈良：京奈和自動車道「完全免費」且40分可達，停車¥600/日。法隆寺是公共交通極不便的世界遺産（JR法隆寺站到寺院還要步行20分或搭巴士），自駕才能輕鬆完成「二個世界遺産一日遊」</div>
     </div>
   </div>
 
@@ -744,18 +763,19 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">🎄 清水寺・祇園 聖誕夜</div>
         <div class="day-date-tag">12/24 (四) 聖誕夜</div>
       </div>
-      <div class="day-loc">📍 京都市内（車停酒店・步行或公車移動）</div>
+      <div class="day-loc">📍 京都市内（車停酒店・全程步行 or 市巴士207）</div>
       <ul class="acts">
-        <li><span class="act-time">08:30</span>清水寺（¥500）清晨人少・音羽の滝</li>
-        <li><span class="act-time">10:00</span>二年坂・三年坂・産寧坂</li>
-        <li><span class="act-time">11:30</span>祇園 花見小路・白川巽橋</li>
-        <li><span class="act-time">13:00</span>錦市場 lunch</li>
-        <li><span class="act-time">15:00</span>建仁寺（¥800）・双龍図</li>
-        <li><span class="act-time">17:30</span>八坂神社・円山公園 聖誕燈飾</li>
+        <li><span class="act-time">08:00</span>清水寺（¥500，開放06:00）：今日全程不開車，車停酒店。聖誕夜清晨的清水寺霧氣氤氳，清水舞台（懸崖木架式建築・釘子無用工法）早晨8點前光線最美，遊客最少</li>
+        <li><span class="act-time">09:30</span>二年坂・三年坂・産寧坂：石板坡道，雨天石板反光如鏡，晴天冬日陽光斜射古老京瓦片屋頂。スターバックス二年坂（1818年建築改建）打一杯Kyoto抹茶拿鐵，在格子窗邊坐</li>
+        <li><span class="act-time">10:30</span>祇園 花見小路：全長500m石板路，兩側江戸時代置屋・茶屋建築保存完好。白川沿岸（白川南通）是京都最上鏡頭感地點，巽橋石橋+柳樹+格子紅燈籠，12/24聖誕夜氣氛最夢幻</li>
+        <li><span class="act-time">12:30</span>錦市場（京都の台所・長390m）：玉子焼き（三木鶏卵¥250）・京漬物試吃（打田漬物）・湯葉刺身（近江屋）・有次廚具老店（創業1560年！）</li>
+        <li><span class="act-time">15:00</span>建仁寺（¥800，開放10:00）：京都最古禅寺1202年創立。「双龍図」天花板壁畫（45m×22m・畠山大輔 2002年作）震撼，枯山水庭園「○△□乃庭」極簡之美</li>
+        <li><span class="act-time">17:00</span>八坂神社（免費，24小時）：聖誕夜的八坂，境内紅燈籠與聖誕樹共存，超獨特日本聖誕風情。円山公園 枝垂桜骨架配LED燈飾，附近街頭有聖誕演唱</li>
+        <li><span class="act-time">18:30</span>花見小路夜間散步（再走一次，夜晚氣氛截然不同）・白川沿岸倒影最美時段</li>
       </ul>
       <div class="meal-row">
-        <span class="meal-tag">🥢 午餐：錦市場邊走邊吃</span>
-        <span class="meal-tag">🎄 晚餐：祇園丸山（需預約）或 祇園 京料亭懷石</span>
+        <span class="meal-tag">🥢 午餐：錦市場邊走邊吃（玉子焼+湯葉+漬物 約¥1,500輕鬆搞定）</span>
+        <span class="meal-tag">🎄 晚餐：祇園 京料亭懷石（聖誕夜特別コース・需2-3個月前預約・¥18,000-30,000/人）或 祇園ボロ市的小居酒屋更輕鬆</span>
       </div>
     </div>
   </div>
@@ -767,17 +787,19 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">🎮 宇治・任天堂博物館（自駕停車超方便）</div>
         <div class="day-date-tag">12/25 (五) 聖誕節</div>
       </div>
-      <div class="day-loc">📍 京都 → 宇治（自駕20分）</div>
+      <div class="day-loc">📍 京都 → 宇治（自駕20分，京滋バイパス or 国道24号）</div>
       <ul class="acts">
-        <li><span class="act-time">09:30</span>開車→宇治市内停車場，步行10分到博物館</li>
-        <li><span class="act-time">10:30</span>任天堂博物館（¥3,300・抽選制）</li>
-        <li><span class="act-time">13:00</span>中村藤吉 本店 抹茶套餐</li>
-        <li><span class="act-time">14:30</span>平等院鳳凰堂（¥1,000）</li>
-        <li><span class="act-time">16:00</span>宇治川散步→開車返京都</li>
+        <li><span class="act-time">09:30</span>開車→宇治市内停車場（宇治橋通り沿岸の「ウジウジパーキング」¥300-500/日・超划算），步行10分到任天堂博物館（京都府宇治市小倉町神楽田56）</li>
+        <li><span class="act-time">10:30</span>任天堂博物館（¥3,300・完全抽選制）：入場附10枚「ニンテンドーコイン」。花札・かるた → Game & Watch → 紅白機FC → SFC → N64 → GameCube → DS → Wii → Switch，70年遊戲史全收錄。互動遊戲機台是亮點</li>
+        <li><span class="act-time">12:00</span>金幣分配攻略：大型搖桿「BALL（ボール）」（Game&Watch原作・10枚）→ 巨大ゲームボーイ（8枚）→ 超大花火師（6枚）。先看完常設展再玩，每人每次限入場</li>
+        <li><span class="act-time">13:00</span>中村藤吉 宇治本店（1854年創業・博物館步行5分）：生茶ゼリィ入り（¥1,300）・抹茶ソフトクリーム（¥650外帶）。旺季等位30-60分，建議11:30前排或訂位</li>
+        <li><span class="act-time">14:30</span>平等院鳳凰堂（¥1,000，開放08:30）：建於1052年，日本10円硬幣上的建築・UNESCO世界遺産。鳳翔館（附屬博物館，票已含）收藏国宝雲中供養菩薩像52体。鳳凰堂内部参觀追加¥300值得加購</li>
+        <li><span class="act-time">15:30</span>宇治川沿岸：橘島・塔の島（十三重石塔・700年歷史）、宇治橋欄杆上的「橋姫」、宇治川の瀬音（川流聲・靜謐感十足）</li>
+        <li><span class="act-time">17:00</span>開車返京都（20分），途中可在伏見稲荷大社停留（黄昏千本鳥居人少・停車免費）</li>
       </ul>
       <div class="meal-row">
-        <span class="meal-tag">🍵 午餐：中村藤吉（宇治本店）</span>
-        <span class="meal-tag">🍜 晚餐：山元麺蔵（京都沾麵名店）</span>
+        <span class="meal-tag">🍵 午餐：中村藤吉 本店 生茶ゼリィ套餐（¥1,300-1,800，訂位避免等位）</span>
+        <span class="meal-tag">🍜 晚餐：山元麺蔵（京都二条・土ごぼうつけ麺¥1,350・沾麵元祖・開店前排隊）</span>
       </div>
     </div>
   </div>
@@ -789,18 +811,19 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">✨ 金閣寺・龍安寺・嵐山（自駕攻略）</div>
         <div class="day-date-tag">12/26 (六)</div>
       </div>
-      <div class="day-loc">📍 京都市内 北部 → 嵐山</div>
+      <div class="day-loc">📍 京都市内 北部 → 嵐山（自駕各景點停車¥500-800）</div>
       <ul class="acts">
-        <li><span class="act-time">08:00</span>自駕→金閣寺周邊停車場（¥500-800），早去人少</li>
-        <li><span class="act-time">09:00</span>金閣寺（¥500）+ 龍安寺（¥600）</li>
-        <li><span class="act-time">11:00</span>開車→嵐山駐車場（¥500）</li>
-        <li><span class="act-time">11:30</span>竹林の道・渡月橋・天龍寺庭園（¥800）</li>
-        <li><span class="act-time">13:30</span>嵐山 lunch</li>
-        <li><span class="act-time">16:00</span>返市區・二条城（¥800）</li>
+        <li><span class="act-time">08:00</span>自駕→金閣寺（鹿苑寺）周邊停車場（¥500/回・開放09:00前到人最少）。黃金閣倒影鏡湖池，冬日清晨霧氣最美。境内金閣・舎利殿・安民沢・夕佳亭順走約45分</li>
+        <li><span class="act-time">09:30</span>開車5分 → 龍安寺（¥600）：枯山水石庭「虎の子渡し」（15石任一角度只見14石）。冬日無楓葉更顯禪意。境内鏡容池映樹倒影也美。衣笠別荘町邊走邊看寧靜住宅街</li>
+        <li><span class="act-time">11:00</span>開車 → 嵐山駐車場（渡月橋北側P，¥500/回）。渡月橋是嵐山地標（全長155m），大堰川背景是嵐山松林山體</li>
+        <li><span class="act-time">11:30</span>竹林の道（免費，全400m）：高大孟宗竹遮天蔽日。往野宮神社延伸（戀愛祈願・黑木鳥居・苔庭），往常寂光寺方向（¥500）是「私房」楓葉名所。早到可避人群</li>
+        <li><span class="act-time">13:00</span>天龍寺（曹源池庭園¥500・伽藍¥800）：禅寺境内嵐山全景，600年竹林入口在鐘樓旁（私有区域免費通行），比「竹林の道」更無人更原始</li>
+        <li><span class="act-time">14:30</span>嵐山 café 散策：% Arabica Arashiyama（外帶咖啡¥750，大堰川岸邊景色最美）</li>
+        <li><span class="act-time">16:00</span>開車 → 二条城（¥800，開放08:45）：德川家康1603年建，德川慶喜大政奉還之地。二の丸御殿「うぐいす張り」（鶯張迴廊，防刺客地板設計，走動發出鶯叫聲）是日本最獨特建築體驗之一</li>
       </ul>
       <div class="meal-row">
-        <span class="meal-tag">🥢 午餐：嵐山 竹路庭 湯豆腐</span>
-        <span class="meal-tag">🍣 晚餐：京都 魚魚 河原町（鮮魚居酒屋）</span>
+        <span class="meal-tag">🥢 午餐：嵐山 竹路庭 湯豆腐定食（¥3,850，大堰川景觀中用餐，建議電話訂位）</span>
+        <span class="meal-tag">🍣 晚餐：京都 魚魚 河原町（旬の鮮魚居酒屋，日替わり刺身盛合せ¥1,800，¥3,000-5,000/人）</span>
       </div>
     </div>
   </div>
@@ -812,18 +835,20 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">🛍 京都最終採購・整理行李</div>
         <div class="day-date-tag">12/27 (日)</div>
       </div>
-      <div class="day-loc">📍 京都市内</div>
+      <div class="day-loc">📍 京都市内（車停酒店・全程步行 or 地鐵）</div>
       <ul class="acts">
-        <li><span class="act-time">上午</span>錦市場 伴手禮採購（漬物・湯葉・抹茶菓子）</li>
-        <li><span class="act-time">11:00</span>京都駅 伊勢丹・The Cube（551蓬莱・阿闍梨餅・八橋）</li>
-        <li><span class="act-time">下午</span>寺町通 古書店・雜貨閒逛</li>
-        <li><span class="act-time">晚上</span>整理行李，確認明日還車與航班時間</li>
+        <li><span class="act-time">09:30</span>錦市場（早上人最少）：伴手禮採購重點 → 打田漬物（本店・各種京漬物試吃・¥500-1,000/袋）・近江屋 湯葉（乾燥湯葉可帶回）・長久堂 有平糖・豊田愛山堂 京みやげ菓子</li>
+        <li><span class="act-time">10:30</span>寺町通・新京極通：古書店・和雜貨・伝統工芸（扇子・漆器・清水焼・京人形）。SOU・SOU（京都ブランド・和柄文具）・京都限定スターバックスタンブラー（寺町通り近く）</li>
+        <li><span class="act-time">12:00</span>伏見稲荷大社（自駕10分）：市内最後一個景點，千本鳥居在午間光線下橙紅色最鮮豔。停車場（¥500，稲荷大社内無料P）</li>
+        <li><span class="act-time">14:00</span>京都駅 伊勢丹B2 + THE CUBE B1-B2：551蓬莱 豚まん（熱騰騰）・阿闍梨餅（生菓子真空包）・聖護院 八橋（生八橋・抹茶・黒糖）・京都タワー地下「おみやげ小路」</li>
+        <li><span class="act-time">16:00</span>回酒店整理行李。大型行李在酒店前台辦理「ヤマト宅急便 空港宅配」（翌日KIX取件・每件¥2,000-3,000），明天開車輕鬆上路不被行李綁架</li>
+        <li><span class="act-time">晚上</span>確認明日行程：KIX還車時間・航班時間・高速路線（京都東IC → 阪和自動車道 or 阪神高速 → KIX，約1.5小時）</li>
       </ul>
       <div class="meal-row">
-        <span class="meal-tag">🥢 午餐：錦市場周邊</span>
-        <span class="meal-tag">🍴 晚餐：夷川餃子 なかじま（ローカル隱藏版・完美收尾）</span>
+        <span class="meal-tag">🥢 午餐：錦市場周邊（近藤とうふ湯豆腐ランチ or 麺屋たけ井 鴨南蛮蕎麦）</span>
+        <span class="meal-tag">🍴 晚餐：夷川餃子 なかじま（御池通・京都在地人最愛，手工皮薄多汁焼餃子，完美收尾，¥1,500無需訂位）</span>
       </div>
-      <div class="tip-box">💡 大型行李建議在京都駅用ヤマト宅急便寄往KIX，隔日在機場取件，開車不用綁手綁腳</div>
+      <div class="tip-box">💡 大型行李「ヤマト宅急便 空港宅配」：今晚在酒店前台辦理，翌日09:00-21:00 在KIX第一航廈「宅急便受取カウンター」取件（每件¥2,000-3,000），明天自駕往KIX空手輕鬆！記得保留一個小行李帶重要物品上車</div>
     </div>
   </div>
 
@@ -834,13 +859,16 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">✈️ 還車・啟程回台灣</div>
         <div class="day-date-tag">12/28 (一)</div>
       </div>
-      <div class="day-loc">📍 京都 → KIX（阪神高速・約1.5小時）</div>
+      <div class="day-loc">📍 京都 → 阪和自動車道 → KIX（約1.5小時）</div>
       <ul class="acts">
-        <li><span class="act-time">早晨</span>退房，行李全部上車</li>
-        <li><span class="act-time">起飛-4h</span>開車往 KIX（提前4小時出發，含還車手續約30分）</li>
-        <li><span class="act-time">——</span>KIX 2F 還車 → 航廈免稅店 → 登機回台灣！✈️</li>
+        <li><span class="act-time">早晨</span>酒店退房，行李（小包）全上車。昨晚已辦理宅急便的大件行李今天直接在KIX取件，開車上路輕鬆</li>
+        <li><span class="act-time">起飛-4h</span>出發：京都東IC → 名神高速 → 阪和自動車道 → 関空IC → KIX（約1.5小時・ETC約¥1,400）。含還車手續30分，建議起飛4小時前出發，不必趕</li>
+        <li><span class="act-time">還車</span>KIX 2F「レンタカーリターン」標示路線進入。在停車場確認車身無新增損傷 → 工作人員確認 → 歸還ETC卡・鑰匙・行駛証明書，手續約15-20分。若有輕微損傷，取車時的照片記錄是最重要的自保武器</li>
+        <li><span class="act-time">KIX</span>進入航廈：①「ヤマト宅急便受取カウンター」（第一航廈）取回寄送行李 ② 航空公司 check-in 辦理 ③ 出境稅關（消費稅退稅 Tax Refund 最後機會） ④ 免稅店（化妝品・洋酒・零食・藥妝最後衝刺）</li>
+        <li><span class="act-time">免稅區</span>KIX 免稅亮點：Duty Free Kintetsu（茅台・洋酒）・ANA FESTA（関西限定零食）・資生堂・SK-II（比市價便宜10-20%）。ICOCA 記得在航廈內自動售票機退押金¥500！</li>
+        <li><span class="act-time">——</span>✈️ 飛返桃園！11天的自駕関西圓滿收尾。開了幾百公里，走過吊橋、白鷺城、神宮、竹林，路上每一段都是故事</li>
       </ul>
-      <div class="tip-box">💡 KIX 還車：依標示開到 2F Rental Car Return，約15-20分完成。若車有輕微刮傷，取車時務必拍照存證</div>
+      <div class="tip-box">💡 KIX還車注意：ETC卡確認還回（丟失費用極高）・油箱加滿再還（合約要求）・取車時拍下的損傷照片是最重要保護。若有 JAF 道路救援加入，還車前先確認取消。消費稅退稅（Tax Refund）在出境稅關前完成</div>
     </div>
   </div>
 
@@ -1124,25 +1152,26 @@ function filterCity(city, btn) {
   });
 }
 
-// 各景點圖片（Wikimedia Commons）
+// 各景點圖片（Wikimedia Commons — 以 MD5 hash 正確計算路徑）
 const DAY_IMGS = {
-  '抵達大阪':    'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Glico_Man_sign%2C_Dotonbori.JPG/1280px-Glico_Man_sign%2C_Dotonbori.JPG',
-  '大阪城':      'https://upload.wikimedia.org/wikipedia/commons/a/ac/Osaka_Castle_Nishinomaru_Garden_April_2005.JPG',
-  '環球影城':    'https://commons.wikimedia.org/wiki/Special:FilePath/Universal_Japan.JPG',
-  '奈良日歸':    'https://upload.wikimedia.org/wikipedia/commons/3/33/Todaiji_Syunie_Nara_JPN_001.JPG',
-  '神戶日歸':    'https://commons.wikimedia.org/wiki/Special:FilePath/Harborland_%28Port_of_Kobe%29_20150920-5.JPG',
-  '伊勢神宮':    'https://commons.wikimedia.org/wiki/Special:FilePath/Naiku_Ise-jingu_Grand_Shrine_01.JPG',
-  '鳥羽水族館':  'https://commons.wikimedia.org/wiki/Special:FilePath/Dugong%2C_Toba_Aquarium.jpg',
-  '清水寺':      'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Kyoto-Kiyomizu_Temple-2.JPG/1280px-Kyoto-Kiyomizu_Temple-2.JPG',
-  '宇治':        'https://upload.wikimedia.org/wikipedia/commons/0/00/Phoenix_South_Byodoin.JPG',
-  '任天堂':      'https://upload.wikimedia.org/wikipedia/commons/0/00/Phoenix_South_Byodoin.JPG',
-  '金閣寺':      'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Kinkaku-ji_the_Golden_Temple_in_Kyoto_overlooking_the_lake_-_high_rez.JPG/1280px-Kinkaku-ji_the_Golden_Temple_in_Kyoto_overlooking_the_lake_-_high_rez.JPG',
-  '嵐山':        'https://commons.wikimedia.org/wiki/Special:FilePath/2021_Sagano_Bamboo_forest_in_Arashiyama%2C_Kyoto%2C_Japan.jpg',
-  '淡路島':      'https://upload.wikimedia.org/wikipedia/commons/f/f1/Akashi_Bridge.JPG',
-  '姫路城':      'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Himeji_castle.JPG/1280px-Himeji_castle.JPG',
-  '名花之里':    'https://commons.wikimedia.org/wiki/Special:FilePath/Illumination_of_Nabana_no_sato.JPG',
-  '奈良自駕':    'https://upload.wikimedia.org/wikipedia/commons/3/33/Todaiji_Syunie_Nara_JPN_001.JPG',
-  '聖誕夜':      'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Kyoto-Kiyomizu_Temple-2.JPG/1280px-Kyoto-Kiyomizu_Temple-2.JPG',
+  '抵達大阪':   'https://upload.wikimedia.org/wikipedia/commons/e/e9/Dotonbori_canal_Osaka.jpg',
+  '大阪城':     'https://upload.wikimedia.org/wikipedia/commons/8/81/Osaka_Castle_20100810_1.jpg',
+  '環球影城':   'https://upload.wikimedia.org/wikipedia/commons/6/65/Universal_Studios_Japan_2012.jpg',
+  '奈良日歸':   'https://upload.wikimedia.org/wikipedia/commons/d/db/Todai-ji_Nara_pref01n3200.jpg',
+  '奈良自駕':   'https://upload.wikimedia.org/wikipedia/commons/1/11/Sika_deer_in_Nara.jpg',
+  '神戶日歸':   'https://upload.wikimedia.org/wikipedia/commons/4/4d/Kobe_harborland.jpg',
+  '伊勢神宮':   'https://upload.wikimedia.org/wikipedia/commons/7/77/Ise_Jingu_-_Naiku_02.jpg',
+  '鳥羽水族館': 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Toba_Aquarium01s3s4500.jpg',
+  '清水寺':     'https://upload.wikimedia.org/wikipedia/commons/4/4f/Kiyomizudera_in_Kyoto.JPG',
+  '聖誕夜':     'https://upload.wikimedia.org/wikipedia/commons/4/4f/Kiyomizudera_in_Kyoto.JPG',
+  '宇治':       'https://upload.wikimedia.org/wikipedia/commons/f/f1/Byodoin_Hououdou_AP.jpg',
+  '任天堂':     'https://upload.wikimedia.org/wikipedia/commons/f/f1/Byodoin_Hououdou_AP.jpg',
+  '金閣寺':     'https://upload.wikimedia.org/wikipedia/commons/0/01/Kinkaku-ji_Golden_Pavilion_Kyoto.jpg',
+  '嵐山':       'https://upload.wikimedia.org/wikipedia/commons/1/17/Arashiyama_Bamboo_Grove_1.jpg',
+  '採購':       'https://upload.wikimedia.org/wikipedia/commons/1/17/Arashiyama_Bamboo_Grove_1.jpg',
+  '淡路島':     'https://upload.wikimedia.org/wikipedia/commons/b/b7/Akashi_Kaikyo_Bridge_from_below.jpg',
+  '姫路城':     'https://upload.wikimedia.org/wikipedia/commons/2/2b/Himeji_castle01s3s4592.jpg',
+  '名花之里':   'https://upload.wikimedia.org/wikipedia/commons/5/50/Nabana_no_sato_2014_winter_illumination.jpg',
 };
 
 document.addEventListener('DOMContentLoaded', () => {
