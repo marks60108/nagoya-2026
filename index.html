@@ -154,6 +154,10 @@ body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#f0f4f
 .drive-tip-item strong{color:#166534;display:block;margin-bottom:3px}
 
 footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;padding:28px;margin-top:60px;font-size:.82rem}
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.22;z-index:0}
+.day-img-wrap{margin:-18px -20px 14px;height:148px;overflow:hidden;border-radius:10px 10px 0 0}
+.day-img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.day-body:hover .day-img{transform:scale(1.04)}
 
 @media(max-width:768px){
   .hero h1{font-size:1.8rem}
@@ -168,6 +172,7 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
 <body>
 
 <header class="hero">
+  <div class="hero-bg" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Glico_Man_sign%2C_Dotonbori.JPG/1280px-Glico_Man_sign%2C_Dotonbori.JPG')"></div>
   <div class="hero-content">
     <span class="hero-emoji">🏯</span>
     <h1>大阪・京都・伊勢</h1>
@@ -374,13 +379,13 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">⚓ 神戶日歸・異人館・神戶牛・港口</div>
         <div class="day-date-tag">12/22 (二)</div>
       </div>
-      <div class="day-loc">📍 JR大阪 → 三ノ宮（25分・¥410）</div>
+      <div class="day-loc">📍 阪神なんば線 難波 → 神戸三宮（直通約43分・¥820）</div>
       <ul class="acts">
         <li><span class="act-time">09:30</span>北野異人館街：英国館・風見鶏の館（各¥500-650）・异文化建築群</li>
         <li><span class="act-time">12:00</span>南京町（神戸中華街）：老祥記 豚まん 排隊必買</li>
         <li><span class="act-time">14:00</span>ハーバーランド + Mosaic 港口購物廣場</li>
         <li><span class="act-time">15:30</span>メリケンパーク・神戸ポートタワー（¥1,000・新裝開幕）</li>
-        <li><span class="act-time">17:30</span>JR返回大阪</li>
+        <li><span class="act-time">17:30</span>阪神電車 神戸三宮 → 難波 返回大阪</li>
       </ul>
       <div class="meal-row">
         <span class="meal-tag">🥟 午餐：老祥記豚まん + 南京町散食</span>
@@ -692,10 +697,10 @@ footer{background:var(--primary);color:rgba(255,255,255,.5);text-align:center;pa
         <div class="day-title">🦦 鳥羽水族館 → 🌸 名花之里燈飾 → 京都</div>
         <div class="day-date-tag">12/22 (二) 超長精華日！</div>
       </div>
-      <div class="day-loc">📍 鳥羽 → 長島（2.5小時）→ 京都（1.5小時）</div>
+      <div class="day-loc">📍 鳥羽 → 長島（約1.5小時）→ 京都（約1.5小時）</div>
       <ul class="acts">
         <li><span class="act-time">09:30</span>鳥羽水族館（¥2,800）・儒艮・海獺・確認投食時間</li>
-        <li><span class="act-time">12:00</span>退房，高速上路：伊勢→東名阪道→長島IC（2.5小時）</li>
+        <li><span class="act-time">12:00</span>退房，高速上路：松阪IC→東名阪道→長島IC（約1.5小時）</li>
         <li><span class="act-time">15:00</span>名花之里（なばなの里）抵達・¥3,000入場（含¥1,000消費券）</li>
         <li><span class="act-time">16:30</span>🌟 日落後 LED 燈海盛開！百萬株百合田・光之河 震撼演出</li>
         <li><span class="act-time">20:00</span>離開，名神高速 → 京都（1.5小時）</li>
@@ -1118,6 +1123,46 @@ function filterCity(city, btn) {
     card.style.display = (city === 'all' || card.dataset.city === city) ? '' : 'none';
   });
 }
+
+// 各景點圖片（Wikimedia Commons）
+const DAY_IMGS = {
+  '抵達大阪':    'https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Glico_Man_sign%2C_Dotonbori.JPG/1280px-Glico_Man_sign%2C_Dotonbori.JPG',
+  '大阪城':      'https://upload.wikimedia.org/wikipedia/commons/a/ac/Osaka_Castle_Nishinomaru_Garden_April_2005.JPG',
+  '環球影城':    'https://commons.wikimedia.org/wiki/Special:FilePath/Universal_Japan.JPG',
+  '奈良日歸':    'https://upload.wikimedia.org/wikipedia/commons/3/33/Todaiji_Syunie_Nara_JPN_001.JPG',
+  '神戶日歸':    'https://commons.wikimedia.org/wiki/Special:FilePath/Harborland_%28Port_of_Kobe%29_20150920-5.JPG',
+  '伊勢神宮':    'https://commons.wikimedia.org/wiki/Special:FilePath/Naiku_Ise-jingu_Grand_Shrine_01.JPG',
+  '鳥羽水族館':  'https://commons.wikimedia.org/wiki/Special:FilePath/Dugong%2C_Toba_Aquarium.jpg',
+  '清水寺':      'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Kyoto-Kiyomizu_Temple-2.JPG/1280px-Kyoto-Kiyomizu_Temple-2.JPG',
+  '宇治':        'https://upload.wikimedia.org/wikipedia/commons/0/00/Phoenix_South_Byodoin.JPG',
+  '任天堂':      'https://upload.wikimedia.org/wikipedia/commons/0/00/Phoenix_South_Byodoin.JPG',
+  '金閣寺':      'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Kinkaku-ji_the_Golden_Temple_in_Kyoto_overlooking_the_lake_-_high_rez.JPG/1280px-Kinkaku-ji_the_Golden_Temple_in_Kyoto_overlooking_the_lake_-_high_rez.JPG',
+  '嵐山':        'https://commons.wikimedia.org/wiki/Special:FilePath/2021_Sagano_Bamboo_forest_in_Arashiyama%2C_Kyoto%2C_Japan.jpg',
+  '淡路島':      'https://upload.wikimedia.org/wikipedia/commons/f/f1/Akashi_Bridge.JPG',
+  '姫路城':      'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Himeji_castle.JPG/1280px-Himeji_castle.JPG',
+  '名花之里':    'https://commons.wikimedia.org/wiki/Special:FilePath/Illumination_of_Nabana_no_sato.JPG',
+  '奈良自駕':    'https://upload.wikimedia.org/wikipedia/commons/3/33/Todaiji_Syunie_Nara_JPN_001.JPG',
+  '聖誕夜':      'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Kyoto-Kiyomizu_Temple-2.JPG/1280px-Kyoto-Kiyomizu_Temple-2.JPG',
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.day-body').forEach(body => {
+    const titleEl = body.querySelector('.day-title');
+    if (!titleEl) return;
+    const text = titleEl.textContent;
+    const key = Object.keys(DAY_IMGS).find(k => text.includes(k));
+    if (!key) return;
+    const wrap = document.createElement('div');
+    wrap.className = 'day-img-wrap';
+    const img = document.createElement('img');
+    img.className = 'day-img';
+    img.src = DAY_IMGS[key];
+    img.alt = key;
+    img.loading = 'lazy';
+    wrap.appendChild(img);
+    body.insertBefore(wrap, body.firstChild);
+  });
+});
 </script>
 </body>
 </html>
